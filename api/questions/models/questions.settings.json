@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "questions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "questionText": {
+      "type": "string"
+    },
+    "answerOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "answers.answer-options",
+      "max": 4
+    }
+  }
+}
